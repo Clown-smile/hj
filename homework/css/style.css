@@ -1,0 +1,417 @@
+
+body, html {
+	height: 100%;
+}
+body {
+	background-color: #a9a9a9;
+	font-family: '微软雅黑';
+	
+}
+.img1{
+	position:absolute;
+	margin:opx atuo;
+	width: 200px;
+	height: 300px;
+	z-index:128;
+}
+.book {
+	position: absolute;
+	top: 60%;
+	left: 82%;
+	width: 200px;
+	height: 300px;
+	background-color: #fff0f5;
+	z-index:120;
+
+}
+.preserve-3d {
+	transform-style: preserve-3d;
+}
+.book-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 300px;
+	border: 1px solid #1976D2;
+	text-align: center;
+}
+.book-page-box {
+	transform-origin: 0 50%;
+	transform: rotateY(0deg);
+}
+@keyframes flipBook1 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-160deg);
+	}
+	100% {
+
+		transform: rotateY(0deg);
+	}
+}
+@keyframes flipBook2 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-150deg);
+	}
+	100% {
+
+		transform: rotateY(0deg);
+	}
+}
+@keyframes flipBook3 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-140deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+		
+}
+@keyframes flipBook4 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-130deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+		
+}
+@keyframes flipBook5 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-120deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+		
+}
+@keyframes flipBook6 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-110deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+		
+}
+@keyframes flipBook7 {
+	0% {
+
+		transform: rotateY(0deg);
+	}
+	50% {
+
+		transform: rotateY(-100deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+		
+}
+.book-page-1 .page-front {
+	background-color:white;
+}
+.book-page-1 .page-back {
+	background-color: #fff;
+}
+.book-page-1 .page-front p {
+	font-size: 30px;
+	color: #fff;
+	margin-top: 20px;
+}
+.flip-animation-1 {
+	animation: flipBook1 26s  ;
+}
+
+/*书的第二页*/
+.book-page-2 .page-back, .book-page-2 .page-front {
+	background-color: #fff;
+}
+.book-page-2 .page-front p {
+	font-size: 30px;
+	color: #1976D2;
+	margin-top: 20px;
+}
+.flip-animation-2 {
+	animation: flipBook2 18s 4s  ;
+}
+
+/*书的第三页*/
+.book-page-3 .page-back, .book-page-3 .page-front {
+	background-color: #fff;
+}
+.book-page-3 .page-front p {
+	font-size: 30px;
+	color: #1976D2;
+	margin-top: 20px;
+}
+.flip-animation-3 {
+	animation: flipBook3 10s 8s ;
+}
+/*书的第四页*/
+.book-page-4 .page-front p {
+	font-size: 30px;	
+	color: #1976D2;
+	margin-top: 20px;
+}
+.tb{
+	margin-left:50px;
+	margin-top:100px;
+	height:80px;
+	width:80px;
+	border-radius:5%;
+	text-align:center;
+	font-size:20px;
+	line-height: 80px;      
+    overflow:hidden;
+	background-color:#F08080;
+	transition:width 0s;
+	color:#F08080;
+	}
+.tb:hover{
+	width:380px;
+	font-size:30px;
+	color:black;
+	}
+.tb1{
+	margin-left:50px;
+	margin-top:40px;
+	height:80px;
+	width:80px;
+	border-radius:5%;
+	text-align:center;
+	font-size:20px;
+	line-height: 80px;      
+    overflow:hidden;
+	background-color:#F08080;
+	transition:width 0s;
+	color:#F08080;
+	}
+.tb1:hover{
+	width:380px;
+	font-size:30px;
+	color:black;
+	}
+.img{
+	position:absolute;
+	width:80px;
+	height:80px;
+	margin:0px auto;
+	}
+	 .stage{
+	 margin:0px auto;
+	border: 0px solid blue;
+	 }
+	 .back{
+		 position:absolute;
+		 margin:0px auto;
+		 top:0px;
+		 width:100%;
+		 height:100%;
+		 z-index:-4;
+		 opacity:1;
+	 }
+		  .background{
+		 position:absolute;
+		 margin:0px auto;
+		 top:0px;
+		 width:100%;
+		 height:100%;
+		 z-index:-5;
+		 opacity:0.5;
+	 }
+#box{ 
+	 position:absolute;
+	 height:200px;
+	 width:300px;
+	top:100px;
+	left:500px;
+	z-index:99;
+	background-color:red;
+	border: 1px solid black;
+	transform:rotateY(30deg);
+	  }
+#box1{ 
+		 position:absolute;
+		 height:200px;
+		 width:300px;
+		top:100px;
+		left:500px;
+		z-index:49;
+		background-color:red;
+		border: 1px solid black;
+ }
+ .myself{
+	 position:absolute;
+	 height:20px;
+	 width:15px;
+	 top:60px;
+	 left:0px;
+	 background-color: white;
+	 border: 1px solid black;
+	 z-index:149;
+	 opacity:0;
+ }
+ .myself-head{
+	 position:absolute;
+	 height:30%;
+	 width:98%;
+	 top:2%;
+	 left:1%;
+	 background-color:#1E90FF;
+	
+ }
+ .myself-head-img{
+	 position:absolute;
+	 height:100%;
+	 width:30%;
+ }
+ .myself-head-content{
+	 position:absolute;
+	 height:100%;
+	 width:30%;
+	 left:70%;
+ }
+ 
+.myself-body{
+	position:absolute;
+	 height:60%;
+	 width:98%;
+	top:38%;
+	 left:1%;
+	 background-color:#FFFFF0;
+	 overflow-y:auto; 
+	overflow-x:auto; 
+}
+
+.E{
+	 position:absolute;
+	 height:20px;
+	 width:20px;
+	 top:60px;
+	 left:460px; 
+	 background-color: white;
+	 border: 1px solid black;
+	 z-index:90;
+	 opacity:0;
+}
+.E-head{
+	position:absolute;
+	 position:absolute;
+	 height:30%;
+	 width:98%;
+	 top:2%;
+	 left:1%;
+	 background-color:#FFF0F5;
+}
+.E-head-img{
+	position:absolute;
+	 height:100%;
+	 width:20%;
+}
+.E-head-content{
+	position:absolute;
+	left:40%;
+	height:100%;
+	width:60%;
+	background-color:#99CCFF;
+	
+}
+
+.E-body{
+	position:absolute;
+	height:60%;
+	width:98%;
+	top:38%;
+	left:1%;
+	background-color:#B0C4DE;
+	overflow-y:auto; 
+	overflow-x:auto; 
+}
+.honor{
+	 position:absolute;
+	 height:20px;
+	 width:20px;
+	top:60px;
+	 left:20px; 
+	 background-color: white;
+	 border: 1px solid black;
+	 z-index:88;
+	 opacity:0;
+}
+.h-head{
+	position:absolute;
+	 position:absolute;
+	 height:30%;
+	 width:98%;
+	 top:2%;
+	 left:1%;
+	 background-color:#FFF0F5;
+}
+.h-head-img{
+	position:absolute;
+	 height:100%;
+	 width:20%;
+}
+.h-body{
+	position:absolute;
+	height:60%;
+	width:98%;
+	top:38%;
+	left:1%;
+	background-color:#B0C4DE;
+	overflow-y:auto; 
+	overflow-x:auto; 
+}
+.se{
+	 position:absolute;
+	 height:20px;
+	 width:20px;
+	 top:60px;
+	 left:10px; 
+	 background-color: white;
+	 border: 1px solid black;
+	 z-index:86;
+	 opacity:0;
+}
+.jop{
+	 position:absolute;
+	 height:20px;
+	 width:20px;
+	 top:60px;
+	 left:10px; 
+	 background-color: white;
+	 border: 1px solid black;
+	 z-index:84;
+	 opacity:0;
+}
